@@ -1,0 +1,22 @@
+<button
+  id="dropzone"
+  mat-flat-button
+  fileDragDirective
+  (click)="fileInput.click()"
+  (files)="handleFileDropped($event)"
+  *ngIf="!receivedFile"
+>
+<div><mat-icon>file_upload</mat-icon></div>
+<div>Nhấn hoặc kéo thả file vào đây</div>
+</button>
+
+<div *ngIf="receivedFile">
+  <mat-icon>upload_file</mat-icon>
+  {{receivedUrl}}
+</div>
+
+<input
+  (change)="onReceiveFileDropped($event)"
+  type="file"
+  #fileInput hidden
+>

@@ -1,0 +1,37 @@
+.fluid-container{
+  display: flex;
+}
+
+.filter-container{
+  margin: 10px 10px 10px 10px;
+  width: 100%;
+}
+
+.left-container{
+  display: flex;
+  width: 50%;
+}
+
+.kloud-title-container{
+  padding: 10px 0 10px 10px;
+}
+
+.kard-kontent{
+  padding: 10px 5px 0 5px;
+}
+
+.kloud-kard-actions{
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+
+.widget-spacer {
+  flex: 1 1 auto;
+}
+
+.kloud-header {
+  width: 100%;
+  background-color: red;
+  min-height: 100px;
+}
